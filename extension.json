@@ -1,0 +1,32 @@
+{
+    "name": "cryo",
+    "version": "v1.0.0",
+    "command_name": "cryo",
+    "extension_author": "seraphimprotocol",
+    "original_author": "seraphimprotocol",
+    "repo_url": "https://github.com/seraphimprotocol/Cryo",
+    "help": "Early Cryo Bird Injection Technique - Creates a job object in a frozen state, spawns a process in a EXTENDED_STATUPINFO_PRESENT state, inject shellcode, queues an APC thread, unfreezes job object, and executes shellcode",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+      {
+        "os": "windows",
+        "arch": "amd64",
+        "path": "cryo.x64.o"
+      }
+    ],
+    "arguments": [
+      {
+        "name": "pe",
+        "desc": "C:\\\\full\\\\path\\\\to\\\\exe",
+        "type": "string",
+        "optional": false
+      },
+      {
+        "name": "bin",
+        "desc": "/local/path/to/shellcode.bin",
+        "type": "file",
+        "optional": false
+      }
+    ]
+  }
