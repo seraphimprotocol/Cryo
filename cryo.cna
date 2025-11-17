@@ -1,6 +1,6 @@
 beacon_command_register(
     "cryo", 
-    "Early Cryo Bird Injection Technique - Creates a job object in a frozen state, spawns a process in a EXTENDED_STATUPINFO_PRESENT state, inject shellcode, queues an APC thread, unfreezes job object, and executes shellcode", 
+    "Early Bird Cryo Injection Technique - Creates a job object in a frozen state, spawns a process in a EXTENDED_STATUPINFO_PRESENT state, inject shellcode, queues an APC thread, unfreezes job object, and executes shellcode", 
     "Usage: cryo C:\\path\\to\\exe\\to\\hollow.exe /local/path/to/shellcode.bin"
 );
 
@@ -21,7 +21,7 @@ alias cryo {
   	closef($sc_handle);
 
     $args = bof_pack($1,"zb",$2,$sc_data);
-    btask($1, "CRYO - Early Cryo Bird Shellcode Injection");
+    btask($1, "CRYO - Early Bird Cryo Shellcode Injection");
     btask($1, "Reading shellcode from: $+  $3");
 
     beacon_inline_execute($1, $data, "go", $args);
