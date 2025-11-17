@@ -1,6 +1,6 @@
 # Cryo - Cobalt Strike & Sliver BOF
 ---
-This is a Beacon Object File (BOF) that utilizes the Early Cryo Bird Injection technique in order to perform shellcode injection through frozen job objects.
+This is a Beacon Object File (BOF) that utilizes the Early Bird Cryo Injection technique in order to perform shellcode injection through frozen job objects.
 
 The BOF allows for you to choose the EXE to spawn and the raw shellcode (payload.bin) you want executed.
 
